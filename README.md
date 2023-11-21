@@ -12,7 +12,9 @@ This will include notes on how to start simple projects and download all needed 
   - [Supervised learning](#supervised-learning)
   - [Unsupervised learning](#unsupervised-learning)
   - [Reinforcement learning](#reinforcement-learning)
+  - [Neurons](#neurons)
   - [Librarues](#librarues)
+  - [Websites](#websites)
   - [Environments and Installs](#environments-and-installs)
   - [Alogrythums](#alogrythums)
   - [Data](#data)
@@ -33,6 +35,7 @@ This is how text to speach, spam filters, fraud detection.
 
 Here is a basic example.
 The Machine learns from the graph what songs he will like and dislike, then can make predictions about new songs. If the song lies somewhere in the middle of like and dislike. This algorythm is using the closest neigbours 'K-Nearest neighbors algortythm'.
+
 <img src='./assets/k-neigbour.png' />
 
 ## Supervised learning
@@ -49,6 +52,11 @@ Unlabelled training data.
 ## Reinforcement learning
 
 Provide the project with data and tell it right from wrong.
+This number is called an 'Activation'   
+
+## Neurons
+
+A thing that holds a number between 0 and 1
 
 ## Librarues
 
@@ -57,6 +65,10 @@ Provide the project with data and tell it right from wrong.
 3. MatPlotLib
 4. Scikit-Learn
 5. TensorFlow
+
+## Websites
+
+Kaggle
 
 ## Environments and Installs
 
