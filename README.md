@@ -9,6 +9,7 @@ This will include notes on how to start simple projects and download all needed 
 - [Machine Learning Starter](#machine-learning-starter)
   - [Table of contents](#table-of-contents)
   - [About Machine Learning](#about-machine-learning)
+  - [Basic Commands](#basic-commands)
   - [Supervised learning](#supervised-learning)
   - [Unsupervised learning](#unsupervised-learning)
   - [Reinforcement learning](#reinforcement-learning)
@@ -22,6 +23,8 @@ This will include notes on how to start simple projects and download all needed 
   - [IPython](#ipython)
   - [Code Examples](#code-examples)
     - [Basic](#basic)
+    - [Create table](#create-table)
+    - [Select data to model](#select-data-to-model)
 
 ## About Machine Learning
 
@@ -36,7 +39,23 @@ This is how text to speach, spam filters, fraud detection.
 Here is a basic example.
 The Machine learns from the graph what songs he will like and dislike, then can make predictions about new songs. If the song lies somewhere in the middle of like and dislike. This algorythm is using the closest neigbours 'K-Nearest neighbors algortythm'.
 
-<img src='./assets/k-neigbour.png' />
+Machine learning consists of
+
+1. A dataframe - a excel style sheet of data with all the information you have
+2. <img src='./assets/k-neigbour.png' />
+
+## Basic Commands
+
+Convert the data into a file that the computer can interpret from you.
+
+```py
+import pandas as pd
+melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv'
+melbourne_data = pd.read_csv(melbourne_file_path) 
+```
+
+`columns` is a list of columns from the data
+`head`
 
 ## Supervised learning
 
@@ -52,7 +71,7 @@ Unlabelled training data.
 ## Reinforcement learning
 
 Provide the project with data and tell it right from wrong.
-This number is called an 'Activation'   
+This number is called an 'Activation'
 
 ## Neurons
 
@@ -130,4 +149,21 @@ model.fit(train_images, train_labels, epochs=10) # more does not equal better
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 
 print("Test acc: ", test_acc)
+```
+
+### Create table
+
+```py
+import pandas as pd
+
+# Path of the file to read
+iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+
+# Fill in the line below to read the file into a variable home_data
+home_data = pd.read_csv(iowa_file_path)
+```
+
+### Select data to model
+
+```py
 ```
